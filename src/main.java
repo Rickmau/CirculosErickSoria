@@ -5,12 +5,13 @@ public class main {
 
         Scanner data = new Scanner(System.in);
         double radio;
-    Circulo objetoCirculo = new Circulo();
+
 
     System.out.println("Ingrese el radio");
     radio = data.nextFloat();
 
+    Circulo objetoCirculo = new Circulo();
     objetoCirculo.setRadio(radio);
-
+    objetoCirculo.ShowResult(objetoCirculo.area());
     }
 }

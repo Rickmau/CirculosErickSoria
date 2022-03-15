@@ -1,5 +1,7 @@
 public class Circulo {
 
+    private double radio;
+
     public double getRadio() {
         return radio;
     }
@@ -8,12 +10,17 @@ public class Circulo {
         this.radio = radio;
     }
 
-    private double radio;
-
+    public Circulo(){
+        this.radio = radio;
+    }
 
     //Area
-    double area(){
+    public double area(){
         double area = 3.1416 * Math.pow(radio,2);
-        return 0;
+        return area;
+    }
+
+    public void ShowResult(double area){
+        System.out.println("\nEl area del círculo es: " + area);
     }
 }
